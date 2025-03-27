@@ -1,0 +1,135 @@
+nav
+{
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 9999;
+  height: 80px;
+  border-bottom: 2px solid #2F2F2F;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+nav.scrolled
+{
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 9999;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+nav ul li {
+  margin: 0 10px;
+  padding: 20px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2F2F2F;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Unbounded', cursive;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+nav ul li.logo {
+  margin-right: auto;
+  position: relative; /* Ajout de position relative */
+}
+
+nav ul li.logo a img {
+  height: 40px;
+  width: 80px; /* Largeur spécifique pour l'image */
+}
+
+nav ul li:not(.logo) a:hover {
+  border-bottom: 3px solid #2F2F2F;
+}
+
+nav ul li.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+nav ul li.logo a:hover {
+  border-bottom: none;
+}
+
+nav img {
+  height: 30px;
+}
+
+.menuHamburger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.material-icons {
+  font-size: 32px;
+}
+
+@media screen and (max-width :900px) {
+
+  .menuHamburger {
+    display: block;
+  }
+
+  nav{
+    position: absolute;
+    padding: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .mobile-menu {
+    margin-left: 0;
+  }
+
+  #main-nav.mobile-menu ul {
+    margin-left: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    width: 80%;
+    height: 100vh;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+    border-right: 2px solid #2F2F2F;
+  }
+
+  nav .logo {
+    position: absolute;
+    top: 1px;
+    left: 50px;
+  }
+
+
+  nav ul li {
+    margin: 25px 0;
+  }
+
+  nav ul li a {
+    font-size: 2rem;
+  }
+}
+

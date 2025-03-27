@@ -1,0 +1,88 @@
+body.dark-mode {
+    background-color: #2F2F2F;
+    color: #f9f9f9;
+    transition: background-color 0.5s ease;
+  }
+  
+  .dark-mode h1 {
+    color: #f9f9f9;
+  }
+  
+  .dark-mode p {
+    color: #f9f9f9;
+  }
+  
+  .dark-mode h2 {
+    color: #f9f9f9;
+  }
+  
+  .dark-mode button {
+    border-color: #f9f9f9;
+    background-color: #2F2F2F;
+    color: #f9f9f9;
+    box-shadow: #f9f9f9;
+  }
+  
+  .dark-mode button:hover{
+    box-shadow: 3px 3px 0px 2px #f9f9f9;
+  }
+  
+  .dark-mode .card {
+    box-shadow: 2px 2px 0px 1px #f9f9f9;
+    border: 3px solid #f9f9f9;
+  }
+  
+  .dark-mode .card:hover {
+    box-shadow: 3px 3px 0px 2px #f9f9f9;
+  }
+  
+  .dark-mode .word-carousel {
+    background-color: #f9f9f9;
+  }
+  
+  .dark-mode .word-carousel li
+  {
+    color: #2F2F2F;
+  }
+  
+  .dark-mode .square-button
+  {
+    background-color: #2F2F2F;
+    border: 2px solid #f9f9f9;
+    box-shadow: 2px 2px 0px 1px #f9f9f9;
+  }
+  
+  .dark-mode .square-button:hover
+  {
+    border: 2px solid #f9f9f9;
+    box-shadow: 3px 3px 0px 2px #f9f9f9;
+  }
+  
+  .dark-mode .material-icons
+  {
+    color: #f9f9f9;
+  }
+  
+  .dark-mode nav
+  {
+    background-color: #2F2F2F;
+    border-bottom: 2px solid #f9f9f9;
+  }
+  
+  .dark-mode nav.scrolled {
+    background-color: #2F2F2F;
+}
+  
+  .dark-mode nav ul li a {
+    color: #f9f9f9;
+  }
+  
+  .dark-mode nav ul li:not(.logo) a:hover {
+    border-bottom: 3px solid #f9f9f9;
+  }
+
+  .dark-mode nav ul li.logo a img {
+    height: 40px;
+    width: 80px;
+    filter: invert(1);
+  }
